@@ -1,0 +1,29 @@
+# Use Case: UC-Execution.1
+
+## Beschrijving
+Een aanvaller probeert kwaadaardige scripts uit te voeren via de command-line interface (CLI) om ongeautoriseerde toegang tot het systeem te verkrijgen.
+
+## Aanvalstechnieken
+- Tactic: Execution
+- Technique: Command-Line Interface (Tactic.Execution.1)
+
+## Detectiemaatregelen
+1. Monitor CLI-activiteiten op verdachte commando's.
+2. Implementeer endpointbeveiligingsoplossingen om kwaadaardige scriptuitvoering te detecteren.
+3. Bewaak wijzigingen in CLI-configuraties en toegangsrechten.
+
+## Mitigatiemaatregelen
+1. Beperk het uitvoeren van scripts via CLI door gebruikers met minimale rechten.
+2. Gebruik applicatie-whitelisting om alleen goedgekeurde commando's uit te voeren.
+3. Houd CLI-software up-to-date en patch bekende kwetsbaarheden.
+
+## Incidentresponsacties
+1. Isolateer het getroffen systeem om verdere schade te voorkomen.
+2. Verzamel forensische gegevens, waaronder CLI-logbestanden.
+3. Identificeer de bron van de kwaadaardige scripts en neem passende maatregelen.
+
+## Referenties
+- [MITRE ATT&CK Matrix - Execution](https://attack.mitre.org/tactics/TA0002/)
+- [MITRE ATT&CK - Command-Line Interface (Tactic.Execution.1)](https://attack.mitre.org/techniques/T1059/)
+
+---
