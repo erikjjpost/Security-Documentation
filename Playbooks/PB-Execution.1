@@ -1,60 +1,102 @@
-# Playbook: PB-Execution.1
+## Playbook: PB-Execution.1 - Malicious Script Execution
 
-## Doel van het Playbook
-Dit playbook heeft als doel het coördineren van incidentresponsactiviteiten in het geval van kwaadaardige scriptuitvoering via de command-line interface.
+**Mitigation-Category:** Execution
 
-## Stappen en Procedures
+### MITRE
 
-1. **Detectie en Bevestiging:**
-   - Ontvang een melding van kwaadaardige scriptuitvoering.
-   - Bevestig de melding en bepaal de omvang van de aanval.
+| Tactic | Technique ID | Technique Name | Sub-Technique Name | Platforms | Permissions Required | Atomic Red Team Mapping |
+| ------ | ------------ | -------------- | ------------------ |---------- |--------------------- | ------------------------ |
+| Execution | T1059 | Command-Line Interface | | Windows, Linux, macOS | User | ATT&CK-1551, ATT&CK-1552 |
 
-2. **Isolatie van het Getroffen Systeem:**
-   - Isoleer het getroffen systeem om verdere verspreiding van de aanval te voorkomen.
-   - Schakel eventueel netwerktoegang uit.
 
-3. **Verzameling van Forensische Gegevens:**
-   - Start de verzameling van forensische gegevens, waaronder CLI-logbestanden en systeemlogs.
-   - Documenteer timestamps en andere relevante informatie.
+Assign steps to individuals or teams to work concurrently, when possible; this playbook is not purely sequential. Use your best judgment.
 
-4. **Analyse van Kwaadaardige Scripts:**
-   - Analyseer de gedetecteerde kwaadaardige scripts om de gebruikte technieken en doelstellingen te begrijpen.
-   - Classificeer de aanval en bepaal de benodigde responsmaatregelen.
+--------------
 
-5. **Identificatie van de Aanvalsmethode:**
-   - Identificeer de aanvalsmethode op basis van de MITRE ATT&CK-matrix (bijvoorbeeld Tactic.Execution.1).
-   - Koppel de aanvalsmethode aan de relevante use case (UC-Execution.1).
+### Investigate
 
-6. **Herstel van het Getroffen Systeem:**
-   - Voer herstelmaatregelen uit op het getroffen systeem om de normale bedrijfsvoering te herstellen.
-   - Verifieer de effectiviteit van de herstelmaatregelen.
+`TODO: Expand investigation steps, including key questions and strategies, for Malicious Script Execution.`
 
-7. **Rapportage en Documentatie:**
-   - Documenteer alle stappen en genomen beslissingen.
-   - Stel een incidentrapport op voor verdere analyse en verbetering van de beveiligingsmaatregelen.
+--------------
 
-## Betrokken Teams en Verantwoordelijkheden
+### Remediate
 
-- Security Operations Team:
-  - Detectie, isolatie en forensisch onderzoek.
+* **Plan remediation events** where these steps are launched together (or in coordinated fashion), with appropriate teams ready to respond to any disruption.
+* **Consider the timing and tradeoffs** of remediation actions: your response has consequences.
 
-- Incident Response Team:
-  - Analyse van kwaadaardige scripts, identificatie van de aanvalsmethode en herstel van het getroffen systeem.
+#### Contain
 
-## Kritieke Tijdlijnen
+`TODO: Customize containment steps, tactical and strategic, for Malicious Script Execution.`
 
-- Binnen 30 minuten: Detectie en bevestiging van de aanval.
-- Binnen 1 uur: Isolatie van het getroffen systeem.
-- Binnen 4 uur: Verzameling van forensische gegevens en analyse van kwaadaardige scripts.
+`TODO: Specify tools and procedures for each step, below.`
 
-## Communicatieplan
+`TODO: Consider automating containment measures using orchestration tools.`
 
-- Interne communicatie: Via beveiligde kanalen, zoals een incidentresponsplatform.
-- Externe communicatie: Alleen indien nodig, in overeenstemming met juridische en regelgevende vereisten.
+#### Eradicate
 
-## Terugkoppeling en Evaluatie
+`TODO: Customize eradication steps, tactical and strategic, for Malicious Script Execution.`
 
-- Na afloop van het incident: Voer een post-incidentevaluatie uit om lessen te leren en verbeteringen aan te brengen in het incidentresponsproces.
+`TODO: Specify tools and procedures for each step, below.`
 
----
+#### Reference: Remediation Resources
 
+`TODO: Specify financial, personnel, and logistical resources to accomplish remediation.`
+
+--------------
+
+### Communicate
+
+`TODO: Customize communication steps for Malicious Script Execution`
+
+`TODO: Specify tools and procedures (including who must be involved) for each step, below, or refer to overall plan.`
+
+In addition to the general steps and guidance in the incident response plan:
+
+--------------
+
+### Recover
+
+`TODO: Customize recovery steps for Malicious Script Execution.`
+
+`TODO: Specify tools and procedures for each step, below.`
+
+In addition to the general steps and guidance in the incident response plan:
+
+--------------
+  
+### Lessons Learned
+
+The goal of the phase is to discover how to improve the incident response process.  
+You need to answer some basic questions, using developed incident report:  
+
+- What happened?  
+- What did we do well?  
+- What could we have done better?  
+- What will we do differently next time?  
+
+The incident report is the key to improvements.  
+
+`TODO: Add items that will occur post recover.`
+  
+1.    Perform routine cyber hygiene due diligence
+2.    Engage external cybersecurity-as-a-service providers and response professionals
+
+##### Develop the incident report
+
+Develop the Incident Report using your corporate template.  
+
+It should include:  
+
+1. Executive Summary with a short description of damage, actions taken, root cause, and key metrics (Time To Detect, Time To Respond, Time To Recover etc)  
+2. Detailed timeline of adversary actions mapped to [ATT&CK tactics](https://attack.mitre.org/tactics/enterprise/), but most probably most of the actions will be in Actions On Objective stage, which is not very representative and useful)  
+3. Detailed timeline of actions taken by Incident Response Team  
+4. Root Cause Analysis and Recommendations for improvements based on its conclusion  
+5. List of specialists involved in Incident Response with their roles  
+
+--------------
+
+### Resources
+
+#### Additional Information
+
+1. <a name="identity-and-access-playbook-ref-1"></a>["Title"](#TODO-url), Author Last Name (Date)
